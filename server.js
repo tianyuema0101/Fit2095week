@@ -24,7 +24,7 @@ app.get("/newTask",(req,res)=>{
 })
 
 app.post("/addNewTask", (req,res)=>{
-   
+
     db.push(req.body);
     console.log(db)
     res.sendFile(__dirname + "/views/index.html")
